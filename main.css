@@ -1,0 +1,93 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: Archivo, sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    font-family: 'Archivo', sans-serif;
+    background: url(images/background.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Wrapper jako główny kontener */
+.wrapper {
+    width:100%;
+    display:block;   
+}
+
+header {
+    position: relative;
+    width: max-width;
+    height: 120px;
+    background: rgba(243, 245, 255, 1);
+    opacity: 0,7;
+    text-align: right;
+    mix-blend-mode: difference; /* dynamiczny efekt odwrócenia względem tła */ 
+}
+
+header a {
+    font-size: 28px;
+    display: inline-block; /* dopasowanie szerokości do treści */ 
+    margin: 30px 50px; text-decoration: none;
+    font-weight: 700; color: rgb(0, 0, 0);
+}
+
+div .title {
+    text-align: right;
+    margin: 5px 30px 10px 30px;
+    border-bottom: 0,5px solid rgb(187, 186, 195);   
+    outline-width: auto;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto; /* centrowanie sekcji */
+    padding: 20px;
+    border-radius: 10px;
+}
+    
+section h1 {
+   margin: 0 0 10px 0;
+    
+}
+
+section p {
+    margin: 1000;
+    padding: 10px;    
+    border-radius: px;
+}
+
+section h3 {
+    max-width: 300px;
+}
+
+section a {
+    display: block;
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+    padding: 1REM;
+    border-radius: 0,5%;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 100%;
+    box-shadow: -4px 7px 0px #000000;
+    
+}
+
+section a:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: -4px 8px 0px #000000;
+    transition: 0.6s;
+}
+
+footer p {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px 5px 10px;
+    text-align: right;
+    background: rgba(243, 245, 255, 1);
+    mix-blend-mode: difference;
+}
