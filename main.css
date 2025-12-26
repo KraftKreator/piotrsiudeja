@@ -18,6 +18,18 @@ body {
     display:block;   
 }
 
+#model-viewer {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    height: 250px;
+    margin: 10px 10px;
+    mix-blend-mode: normal;
+    display: block;
+}
+
 header {
     position: relative;
     width: max-width;
@@ -91,3 +103,4 @@ footer p {
     background: rgba(243, 245, 255, 1);
     mix-blend-mode: difference;
 }
+
