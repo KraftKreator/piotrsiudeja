@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="icon" href="./imgages/icon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLQBENDFCN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLQBENDFCN');
+</script>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a class="menu" href="https://www.instagram.com/piotr.siudeja">contact</a>/
+            <a class="active" href="gallery.html">gallery</a>
+        </header>
+
+        <div class="title">
+            <h3> garments & apparel</h3>
+        </div>
+
+        <section id="gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                <model-viewer class="model-viewer" src="./top.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer class="model-viewer" src="./testcube.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./ubh.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./ubh.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+               <div class="gallery-item">
+                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
+                </model-viewer>
+               </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>ⓡ 2026 design powered by Visual Design Studio | S_JΛ</p>
+    </footer>
+</body>
+
+</html>
