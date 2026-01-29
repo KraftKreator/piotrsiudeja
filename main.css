@@ -15,26 +15,111 @@ body {
 /* Wrapper jako główny kontener */
 .wrapper {
     width:100%;
-    display:block;   
+    display: inline-block;
+       
+    
 }
 header {
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    width: max-width;
-    height: 120px;
+    width: 100%;
+    height: 180px;
     background: rgba(243, 245, 255, 1);
-    opacity: 0,7;
+    backdrop-filter: blur(8px);
     text-align: right;
-    mix-blend-mode: difference; /* dynamiczny efekt odwrócenia względem tła */ 
+    mix-blend-mode: difference; /* dynamiczny efekt odwrócenia względem tła */     
+    
 }
 
+md-outlined-button {
+    height: 80px;
+    --md-sys-color-primary: black;
+    --md-sys-color-on-primary: black;
+    --md-outlined-button-outline-width: 0.5px;
+    --md-outlined-button-outline-radius: 2px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18pt;
+    padding: 2px 30px;
+}
+
+
+.menu.active {
+    text-decoration: underline;
+}
 
 header a {
     font-size: 150%;
-    
     display: inline-block; /* dopasowanie szerokości do treści */ 
-    margin: 30px 50px; text-decoration: none;
+    text-decoration: none;
     font-weight: 700; color: rgb(0, 0, 0);
 }
+/* burger icon */
+.burger {
+  width: 30px;
+  cursor: pointer;
+  margin: 40px 20px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+  display: none; /* pokażemy tylko na mobile */
+  flex-direction: column;
+  gap: 6px;
+}
+
+.burger span {
+  height: 1.5px;
+  background: black;
+  width: 100%;
+  display: block;
+}
+
+/* menu wrapper */
+.menu-wrapper {
+
+  display: block;
+  max-width: fit-content;
+  gap: 5px;
+  font-size: 24pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu-wrapper {
+    display: none;
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+    
+    /* Frosted glass effect */
+    background: rgba(255, 255, 255, 0.6); /* transparent layer */
+    backdrop-filter: blur(12px); /* the blur itself */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    
+  }
+
+  .menu-wrapper.active {
+    display: flex;
+    background:rgb(255, 255, 255);
+    backdrop-filter: blur(100px);
+    max-width: 320px;
+
+  }
+}
+
+.buy {background-color: aliceblue;
+}
+
 
 div .title h3{
     color: rgb(124, 123, 123);
@@ -104,14 +189,10 @@ section a:hover {
     display: flex;
 }
 
-.model-viewer {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#credits {
+    background-color: rgba(243, 245, 255, 1);
+    mix-blend-mode: difference;
+    border-radius: 0px;
     
 }
 
