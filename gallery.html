@@ -21,51 +21,66 @@
 <body>
     <div class="wrapper">
         <header>
-            <a class="menu" href="https://www.instagram.com/piotr.siudeja">contact</a>/
-            <a class="active" href="gallery.html">gallery</a>
+           <div class="burger"> 
+                <span></span>
+                <span></span>   
+                <span></span>
+           </div>
+
+           <nav class="menu-wrapper">
+            <md-outlined-button class="menu" href="https://www.figma.com/proto/M2K4QJUr4RHqS6JPrL7QHi/portfo-White-Black?node-id=1-1099&p=f&t=Wvn5u8vs64ZRTtdG-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A358" target="_blank">designs</md-outlined-button>
+               <md-outlined-button class="menu" href="https://www.instagram.com/piotr.siudeja" target="_blank">contact</md-outlined-button>
+               <md-outlined-button class="menu" href="gallery.html" target="_blank">gallery</md-outlined-button>
+            </nav>
         </header>
-
+        
         <div class="title">
-            <h3> garments & apparel</h3>
+            <h3> digital & physical</h3>
         </div>
-
+        
+            <h1 class="gallery-title">gallery of services</h1>
+            <aside>world to discover</aside>
         <section id="gallery">
             <div class="gallery-grid">
+                
                 <div class="gallery-item">
+                    
                 <model-viewer class="model-viewer" src="./top.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>picturing</h3>
+                <button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer class="model-viewer" src="./testcube.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>modelling</h3>
+                <button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./ubh.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>detailing</h3><button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./ubh.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>prod.opts</h3><button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>concepts</h3><button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>identity</h3><button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>interiorVis</h3><button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>charting</h3><button>open</button></model-viewer>
                </div>
                <div class="gallery-item">
                 <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                </model-viewer>
+                <h3>digitizing</h3><button>open</button></model-viewer>
                </div>
 
                 </div>
@@ -76,6 +91,7 @@
     <footer>
         <p>ⓡ 2026 design powered by Visual Design Studio | S_JΛ</p>
     </footer>
+<script src="script.js"></script>
 </body>
 
 </html>
