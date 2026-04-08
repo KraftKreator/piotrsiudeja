@@ -1,0 +1,229 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: Archivo, sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    font-family: 'Archivo', sans-serif;
+    background: url(images/background.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Wrapper jako główny kontener */
+.wrapper {
+    width:100%;
+    display: inline-block;
+       
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: rgba(243, 245, 255, 1);
+    backdrop-filter: blur(8px);
+    text-align: right;
+    mix-blend-mode: difference; /* dynamiczny efekt odwrócenia względem tła */     
+    
+}
+
+md-outlined-button {
+    height: 80px;
+    --md-sys-color-primary: black;
+    --md-sys-color-on-primary: black;
+    --md-outlined-button-outline-width: 0.5px;
+    --md-outlined-button-outline-radius: 2px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18pt;
+    padding: 2px 30px;
+}
+
+
+.menu.active {
+    text-decoration: underline;
+    
+}
+
+header a {
+    font-size: 150%;
+    display: inline-block; /* dopasowanie szerokości do treści */ 
+    text-decoration: none;
+    font-weight: 700; color: rgb(0, 0, 0);
+}
+/* burger icon */
+.burger {
+  width: 30px;
+  cursor: pointer;
+  margin: 40px 20px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+  display: none; /* pokażemy tylko na mobile */
+  flex-direction: column;
+  gap: 6px;
+}
+
+.burger #active {
+  text-decoration: underline;
+  
+}
+
+.burger span {
+  height: 1.5px;
+  background: black;
+  width: 100%;
+  display: block;
+}
+
+/* menu wrapper */
+.menu-wrapper {
+border-radius: 40px;
+  display: block;
+  max-width: fit-content;
+  gap: 5px;
+  font-size: 24pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+.gallery-item {
+    font-size: 18pt;
+    padding: 60px 60px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:white;
+    width: 100%;
+    height: 100%;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu-wrapper {
+    display: none;
+    background:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+    
+    /* Frosted glass effect */
+    background: rgba(255, 255, 255, 0.6); /* transparent layer */
+    backdrop-filter: blur(12px); /* the blur itself */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    
+  }
+
+  .menu-wrapper.active {
+    display: flex;
+    background:rgb(255, 255, 255);
+    backdrop-filter: blur(100px);
+    max-width: 320px;
+
+  }
+}
+
+.buy {background-color: aliceblue;
+}
+
+
+div .title h3{
+    color: rgb(124, 123, 123);
+    text-align: right;
+    margin: 5px 30px 10px 30px;
+    border-bottom: 0,5px solid rgb(187, 186, 195);   
+    outline-width: auto;
+}
+
+
+section {
+    max-width: 800px;
+    margin: 50px auto; /* centrowanie sekcji */
+    padding: 20px;
+    border-radius: 10px;
+}
+    
+section h1 {
+   margin: 0 0 10px 0;
+    
+}
+
+section p {
+    margin: 1000;
+    padding: 10px;    
+    border-radius: px;
+}
+
+section h3 {
+    max-width: 300px;
+}
+
+section a {
+    display: block;
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+    padding: 1REM;
+    border-radius: 0,5%;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 100%;
+    box-shadow: -4px 7px 0px #000000;
+    
+}
+
+section a:hover {
+    background: rgb(242, 240, 240);
+    box-shadow: -4px 8px 0px #000000;
+    transition: 0.6s;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-auto-rows: 250px;
+    gap: 3px;
+}
+
+.gallery-item {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(60px);
+    border-radius: 1px;
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px;
+    display: flex;
+}
+
+#credits {
+    background-color: rgba(243, 245, 255, 1);
+    mix-blend-mode: difference;
+    border-radius: 0px;
+    
+}
+
+footer p {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px 5px 10px;
+    text-align: right;
+    background: rgba(243, 245, 255, 1);
+    mix-blend-mode: difference;
+}
