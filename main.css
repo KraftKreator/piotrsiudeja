@@ -92,6 +92,53 @@ border-radius: 40px;
     align-items: center;
     margin-left: auto;
 }
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+  gap: 5px;
+}
+
+.tiles-box-wrapper {
+    background-image: url("./images/pepe-r/background-pepruna.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 800px;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    grid-auto-flow: column;
+    
+    
+    
+}
+
+.tiles-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 1px;
+   place-items: right;
+    padding: 1px; 
+}
+
+.tile-item {
+    place-content: center;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 28px;
+    color: white;
+    max-width: 280px;
+    max-height: 300px;
+    aspect-ratio: 1 /1;
+    padding: 1px;
+    cursor: pointer;
+}
+
 .gallery-item {
     font-size: 18pt;
     padding: 60px 60px;
@@ -138,8 +185,9 @@ border-radius: 40px;
 
 div .title h3{
     color: rgb(124, 123, 123);
+    max-height: 80px;
     text-align: right;
-    margin: 5px 30px 10px 30px;
+    margin: 5px 5px;
     border-bottom: 0,5px solid rgb(187, 186, 195);   
     outline-width: auto;
 }
@@ -160,7 +208,7 @@ section h1 {
 section p {
     margin: 1000;
     padding: 10px;    
-    border-radius: px;
+  
 }
 
 section h3 {
@@ -181,9 +229,25 @@ section a {
 }
 
 section a:hover {
-    background: rgb(242, 240, 240);
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: -4px 8px 0px #000000;
-    transition: 0.6s;
+    transition: 1.6s ease;
+}
+
+.product-title a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.product-title a:hover {
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+    cursor: pointer;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    background: none;
+
+
 }
 
 .gallery {
@@ -201,6 +265,338 @@ section a:hover {
     gap: 3px;
 }
 
+/*dotyczy index.html */
+.tiles-box {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    justify-content: right;
+    align-items: end;
+    gap: 5px;
+}
+
+
+
+
+
+
+.tile-item {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 1px;
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 120%;
+    height: 100%;
+    margin: 10px 10px;
+    display: flex;
+}
+
+.tile-item :hover {
+    
+    backdrop-filter: blur(60px);
+    border-radius: 1px;
+    border: 1px solid rgba(255,255,255,0.4);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+   
+   
+    animation: 2.5s ease;
+    display: flex;    
+}
+
+/*dotyczy podstrony logo-designs */
+.container {
+  
+  max-width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+}
+
+
+
+.cell-bg {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    height: auto;
+    display: block;
+    border: 2.5px solid black;
+}
+.cell-logo {
+    position: absolute;
+    min-width: 180px;
+    width: 100%;
+    top: 10%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.container div {
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  padding: 0px;
+  
+  text-align: center;
+
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;;
+}
+
+.hero-bg  {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+
+    /* podmień na swoje zdjęcie */
+    
+}
+.hero-bg p {
+    position: center;
+    
+    margin-top: 160px;
+    margin-right: 120px;
+    font-size: 46px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* elementy w hero */
+.hero-logo,
+.hero-menu,
+.hero-social,
+.hero-contact {
+    width: 150px;
+    height: 60px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+}
+
+/* --------------------------------------------------
+   SECTION DIVIDER
+-------------------------------------------------- */
+
+.section-divider {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line {
+    width: 60%;
+    height: 2px;
+    background: #000;
+    opacity: 0.2;
+}
+
+/* --------------------------------------------------
+   PROJECT BLOCK
+-------------------------------------------------- */
+
+.project-block {
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+/* duże zdjęcie projektu */
+.project-image-wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+    /* podmień na swoje zdjęcie */
+    background-image: url("../images/background-pepruna-logo.png");
+}
+
+/* miniatura */
+.project-thumbnail {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-thumb-image {
+    width: 200px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+
+    /* podmień na swoje zdjęcie */
+    background-image: url("../images/background-pepruna-logo.png");
+}
+
+/* linia nad opisem */
+.project-topline {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-topline-line {
+    width: 60%;
+    height: 2px;
+    background: #000;
+    opacity: 0.15;
+}
+
+/* opis projektu */
+.project-description-wrapper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.project-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* CTA */
+.project-cta {
+    display: flex;
+    align-items: center;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #333;
+}
+
+.cta-icon {
+    width: 20px;
+    height: 20px;
+    background: url("../images/icon-watch.png") center/contain no-repeat;
+}
+
+.cta-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* linia pod opisem */
+.project-bottomline {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-bottomline-inner {
+    width: 60%;
+    height: 2px;
+    background: #000;
+    opacity: 0.15;
+}
+
+/* --------------------------------------------------
+   RESPONSYWNOŚĆ
+-------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .hero-inner {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .project-description {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .project-image-wrapper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .project-block {
+        padding: 40px 20px;
+    }
+
+    .project-image-wrapper {
+        height: 300px;
+    }
+
+    .project-title span {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px 16px;
+    }
+}
+
+
+
+
+
+/*dotyczy podstrony gallery */
 .gallery-item {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(60px);
@@ -227,3 +623,5 @@ footer p {
     background: rgba(243, 245, 255, 1);
     mix-blend-mode: difference;
 }
+
+

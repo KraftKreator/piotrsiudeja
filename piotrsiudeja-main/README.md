@@ -1,2 +1,0 @@
-# piotrsiudeja
-designer
