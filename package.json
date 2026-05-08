@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "sass": "^1.99.0",
+    "vanilla-framework": "^4.51.0"
+  },
+  "scripts": {
+  "build": "sass --load-path=node_modules scss/styles.scss dist/styles.css --style=compressed",
+  "watch": "sass --watch --load-path=node_modules scss/styles.scss dist/styles.css"
+}
+}
