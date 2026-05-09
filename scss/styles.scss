@@ -3,6 +3,11 @@
 
 // komponent breadcrumbs
 @include vf-p-breadcrumbs;
+@include vf-buttons;
+
+.p-breadcrumbs__item a{
+  font-size: 44px;
+}
 
 
 

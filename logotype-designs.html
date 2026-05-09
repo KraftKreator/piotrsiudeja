@@ -24,7 +24,7 @@
 
     <model-viewer id="bgModel" src="./s_ja.glb" alt="3D model"
         auto-rotate 
-        style="position: fixed; top: 0; left: 0; width: 200%; height: 200%; z-index: -1;"></model-viewer>    
+        style="position: fixed; top: 0; left: 0; width: 380px; height: auto; z-index: -1; display: none;"></model-viewer>    
     <div class="wrapper">   
         <header>
            <div class="burger"> 
@@ -40,8 +40,9 @@
             </nav>
         </header>
 <nav class="p-breadcrumbs">
-                <ol>
-                    <li>/<a href="/index.html">/ Strona główna /</a>/</li>
+                <ol class="p-breadcrumbs__items">
+                    <li class="p-breadcrumbs__item">/<a href="/index.html">/ Strona główna /</a>/</li>
+                    <li class="p-breadcrumbs__item">/<a href="/logotype-designs.html">/ Logotypy /</a>/</li>
                 
                 </nav>
 
@@ -58,21 +59,35 @@
     </div>
     
     <div class="container">
-        <div><img src="./images/pepe-r/peperuna-logo.png" width="100%"><h2>logotype design</h2><p>light</p>  </div>
-        <div><img src="./images/pepe-r/peperuna-logo-white.png" width="100%" style="background-color: black;"><h2>logotype design</h2><p>dark</p></div>
-  
+        <div><img src="./images/pepe-r/peperuna-logo.png" width="100%">
+            <div class="img-caption-container">    
+                <h2>logotype design</h2><p>light</p>  
+            </div>
+        </div>
+        <div><img src="./images/pepe-r/peperuna-logo-white.png" width="100%" style="background-color: black;">
+            <div class="img-caption-container">
+                <h2>logotype design</h2><p>dark</p>
+            </div>
+        </div>
+
         <div class="cell-bg"><img src="./images/pepe-r/background-pepruna.png" width="100%">
             <div class="cell-logo">
                 <img src="./images/pepe-r/peperuna-logo-white.png" style="width: 50%; position: fixed;"> 
             </div>
-            <h2>campaign</h2><p>catalogue cover picture</p>
+            <div class="img-caption-container">
+                <h2>campaign</h2><p>catalogue cover picture</p>
+            </div>
         </div>
 
-        <div class="cell-bg"><img src="./images/pepe-r/peperuna-suspender-green-dress.jpg" width="100%">
+        <div class="cell-bg"><img src="./images/pepe-r/peperuna-suspender-green-dress-WAVE.png" 
+             width="100%">
             <div class="cell-logo">
                 <!--<img src="./images/pepe-r/peperuna-logo-white.png" style="width: 250%; background-color: rgba(255, 255, 255, 0.034); position: fixed;"> -->
             </div>
-            <h2>garment designs</h2><p>a/w rtw</p>
+
+            <div class="img-caption-container">
+                <h2>garment design</h2><p>a/w rtw</p>
+            </div>
         </div>
         
             
@@ -94,31 +109,43 @@
     </div>
 
     <div class="container">
-        <div><img src="./images/mmm/mmmblack.jpg" width="100%"><h2>logotype design</h2><p>darkmode display</p>  </div>
-        <div><img src="./images/mmm/mmm-signet.png" width="100%"><h2>sign / favicon</h2><p>color</p></div>
-  
+        <div><img src="./images/mmm/mmmblack.jpg" width="100%">
+            <div class="img-caption-container">
+                <h2>logotype design</h2><p>darkmode display</p>
+            </div>
+        </div>
+        <div><img src="./images/mmm/mmm-signet.png" width="100%">
+            <div class="img-caption-container">
+                <h2>sign / favicon</h2><p>color</p>
+            </div>
+        </div>
+
         <div class="cell-bg"><img src="./images/mmm/mmm-color-palette.png" width="100%">
             <div class="cell-logo">
                <!-- OPTIONAL COVER IMAGE: <img src="./images/pepe-r/peperuna-logo-white.png" style="width: 50%; position: fixed;">-->
             </div>
-            <h2>colorpalette</h2><p>pantone colorcode</p>
+            <div class="img-caption-container">
+                <h2>colorpalette</h2><p>pantone colorcode</p>
+            </div>
         </div>
 
         <div class="cell-bg"><img src="./images/mmm/color-mist.png" width="100%">
             <div class="cell-logo">
                 <!--<img src="./images/pepe-r/peperuna-logo-white.png" style="width: 250%; background-color: rgba(255, 255, 255, 0.034); position: fixed;"> -->
             </div>
-            <h2>logotype</h2><p>colourway</p>
+            <div class="img-caption-container">
+                <h2>logotype</h2><p>colourway</p>
+            </div>
         </div>
         
             
     </div>
 
-
+    
     <!-- HEADER / HERO -->
     <header class="hero">
         <div class="hero-bg">
-            <img src="./images/mmm/mmm-black.png" width="100%">
+            <img src="./images/mmm/mmm-white.png" width="100%">
         </div>   
         </div>
     </header>
@@ -130,21 +157,33 @@
 
 
     <div class="container">
-        <div><img src="./images/d2b/d2b-sign-rebrand3.png" width="100%"><h2>logotype design</h2><p>darkmode display</p>  </div>
-        <div><img src="./images/d2b/d2b-logotype-rebrand4.png" width="100%"><h2>sign / favicon</h2><p>color</p></div>
-  
+        <div><img src="./images/d2b/d2b-sign-rebrand3.png" width="100%">
+            <div class="img-caption-container">
+                <h2>logotype design</h2><p>darkmode display</p>
+            </div>
+        </div>
+        <div><img src="./images/d2b/d2b-logotype-rebrand4.png" width="100%">
+            <div class="img-caption-container">
+                <h2>sign / favicon</h2><p>color</p>
+            </div>
+        </div>
+
         <div class="cell-bg"><img src="./images/d2b/d2b-ad.png" width="100%">
             <div class="cell-logo">
                <!-- OPTIONAL COVER IMAGE: <img src="./images/" style="width: 50%; position: fixed;">-->
             </div>
-            <h2>colorpalette</h2><p>pantone colorcode</p>
+            <div class="img-caption-container">
+                <h2>colorpalette</h2><p>pantone colorcode</p>
+            </div>  
         </div>
 
         <div class="cell-bg"><img src="./images/d2b/d2b-rebrand1.png" width="100%">
             <div class="cell-logo">
                 <!--<img src="./images/pepe-r/peperuna-logo-white.png" style="width: 250%; background-color: rgba(255, 255, 255, 0.034); position: fixed;"> -->
             </div>
-            <h2>logotype</h2><p>colourway</p>
+            <div class="img-caption-container">
+                <h2>logotype</h2><p>colourway</p>
+            </div>
         </div>
         
             
@@ -154,7 +193,7 @@
     <!-- HEADER / HERO -->
     <header class="hero">
         <div class="hero-bg">
-            <img src="./images/d2b/d2b-black.png" width="100%">
+            <img src="./images/d2b/d2b-white.png" width="100%">
         </div>   
         </div>
     </header>

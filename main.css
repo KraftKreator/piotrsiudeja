@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 120px;
     background: rgba(218, 212, 255, 0.801);
     backdrop-filter: blur(8px);
     text-align: right;
@@ -336,7 +336,7 @@ section a:hover {
     
     height: auto;
     display: block;
-    border: 2.5px solid black;
+    border: 0.2px solid black;
 }
 .cell-logo {
     position: absolute;
@@ -347,6 +347,15 @@ section a:hover {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
+
+.img-caption-container {
+    margin-left: 20px;
+    display: flex;
+    width: 100%;
+    height: 66px;
+    
+}
+
 
 .container div {
   display: flex;
@@ -367,14 +376,14 @@ section a:hover {
 }
 
 .hero-bg  {
-    position: absolute;
+    position: center;
     inset: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-content: center;
-
-    /* podmień na swoje zdjęcie */
+    margin-bottom: 205px;
+    
     
 }
 .hero-bg p {
@@ -625,20 +634,23 @@ section a:hover {
 footer {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
+    position: end;
     bottom: 0;
     width: 100%;
     border-width: 0.3px;
     border-color: black;
     border-style: solid;
+    background-color: rgba(218, 212, 255, 0.801);
 }
 
 footer p {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    height: 60px;
+    height: 30px;
     padding: 10px 20px 5px 10px;
     text-align: right;
-    background: rgba(243, 245, 255, 1);
+    
     mix-blend-mode: difference;
 }
 
