@@ -6,3 +6,4 @@ const menu = document.querySelector('.menu-wrapper');
 burger.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
+

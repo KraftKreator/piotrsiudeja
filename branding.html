@@ -21,20 +21,113 @@
 
 <body>
     <div class="wrapper">
-        <header>
-           <div class="burger"> 
-                <span></span>
-                <span></span>   
-                <span></span>
-           </div>
+    
+        <header id="navigation" class="p-navigation--sliding">
+            <div class="p-navigation__row--25-75">
+                <div class="p-navigation__banner">
+                <div class="p-navigation__tagged-logo">
+                    <a class="p-navigation__link" href="index.html">
+                    <div class="p-navigation__logo-tag" style="width: 100%; height: auto;">
+                        <img class="p-navigation__logo-icon" src="./images/bracket-black.png" alt="">+
+                    </div>
+                    <span class="p-navigation__logo-title">S_JΛ </span>
+                    </a>
+                </div>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                    <button class="js-menu-button p-navigation__link">Menu</button>
+                    </li>
+                </ul>
+                </div>
+                <nav class="p-navigation__nav" aria-label="Example main">
+                <ul class="p-navigation__items js-dropdown-nav-list js-navigation-sliding-panel">
+                    <li class="p-navigation__item">
+                    <a class="p-navigation__link" href="https://www.figma.com/proto/M2K4QJUr4RHqS6JPrL7QHi/portfo-White-Black?node-id=1-675&t=WRIYSPc2mM4nFqQz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A358" tabindex="0">Designs</a>
+                    </li>
+                   <!-- <li class="p-navigation__item">
+                    <a class="p-navigation__link" href="#" tabindex="0">Gallery</a>
+                    </li>-->
+                    <li class="p-navigation__item">
+                    <a class="p-navigation__link" href="https://www.linkedin.com/in/piotr-siudeja-0a118b1a8/" tabindex="0">Contact</a>
+                    </li>
+                    <li class="p-navigation__item--dropdown-toggle js-navigation-dropdown-toggle" id="link-1">
+                    <button href="#link-1-menu" aria-controls="link-1-menu" class="p-navigation__link" tabindex="0">
+                        LOGOTYPE
+                    </button>
+                    <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel is-collapsed" id="link-1-menu" aria-hidden="true" data-level="1">
+                        <li class="p-navigation__item--dropdown-close" id="link-1-back">
+                        <button href="#link-1-menu" aria-controls="link-1-menu" class="p-navigation__link js-back-button" tabindex="-1">
+                            Back
+                        </button>
+                        </li>
+                        <li>
+                        <a href="logotype-designs.html" class="p-navigation__dropdown-item" tabindex="-1">Works Portfolio</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">Naming Concepts</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">Color Palletes</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">Design Process</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">DTP / Print / Web</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="p-navigation__item--dropdown-toggle js-navigation-dropdown-toggle is-selected" id="link-2">
+                    <button href="https://www.figma.com/proto/vnwSqFirS88hen4t6GJehg/Untitled?node-id=21-813&t=NHT9bwSAaknyvikM-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" aria-controls="link-2-menu" class="p-navigation__link" tabindex="0">
+                        BRANDING
+                    </button>
+                    <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel is-collapsed" id="link-2-menu" aria-hidden="true" data-level="1">
+                        <li class="p-navigation__item--dropdown-close" id="link-2-back">
+                        <button href="#link-2-menu" aria-controls="link-2-menu" class="p-navigation__link js-back-button" tabindex="-1">
+                            Back
+                        </button>
+                        </li>
+                        <li>
+                        <a href="branding.html" class="p-navigation__dropdown-item" tabindex="-1">Works</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1">Apps</a>
+                        </li>
+                        <!-- <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1">Getting started</a>
+                        </li> -->
+                        <li class="p-navigation__item--dropdown-toggle js-navigation-dropdown-toggle" id="link-4">
+                        <button href="#link-4-menu" aria-controls="link-4-menu" class="p-navigation__link" tabindex="-1">
+                            Ads
+                        </button>
+                        <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel is-collapsed" id="link-4-menu" aria-hidden="true" data-level="2">
+                            <li class="p-navigation__item--dropdown-close" id="link-4-back">
+                            <button href="#link-4-menu" aria-controls="link-4-menu" class="p-navigation__link js-back-button" tabindex="-1">
+                                Back
+                            </button>
+                            </li>
+                            <li>
+                            <a href="#" class="p-navigation__dropdown-item" tabindex="-1">Introduction</a>
+                            </li>
+                            <li>
+                            <a href="#" class="p-navigation__dropdown-item" tabindex="-1">News</a>
+                            </li>
+                            <li>
+                            <a href="#" class="p-navigation__dropdown-item" tabindex="-1">Getting started</a>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            </header>
+<script src="script-header.js"></script>
 
-           <nav class="menu-wrapper">
-            <md-outlined-button class="menu" href="https://www.figma.com/proto/M2K4QJUr4RHqS6JPrL7QHi/portfo-White-Black?node-id=1-1099&p=f&t=Wvn5u8vs64ZRTtdG-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A358" target="_blank">designs</md-outlined-button>
-               <md-outlined-button class="menu" href="https://www.linkedin.com/in/piotr-siudeja-0a118b1a8/" target="_blank">contact</md-outlined-button>
-               <md-outlined-button class="menu" href="gallery.html" target="_blank">gallery</md-outlined-button>
-            </nav>
-        </header>
-        
+       
+
+   
         <div class="title">
             <h3> digital & physical</h3>
         </div>
@@ -58,7 +151,7 @@
                         <div class="p-card__content">
                             <img class="p-card__image" alt="" height="185" width="330" src="./images/cold-hell.png">
                             <h4>
-                            <a href="https://vandersinn.bandcamp.com/merch">Cofee Club | web & mobile App</a>
+                            <a href="https://www.figma.com/proto/Ez6Ho298MMNVyFh025ypVt/CoffeClub?node-id=441-43&t=9n6NxcfkOcp57imu-0&scaling=scale-down&content-scaling=fixed&page-id=441%3A0">Cofee Club | web & mobile App</a>
                             </h4>
                             <p class="u-no-padding--bottom">Try Figma prototype</p>
                         </div>
@@ -70,9 +163,9 @@
                         <div class="p-card__content">
                             <img class="p-card__image" alt="" height="185" width="330" src="./images/c9dg-logo.png">
                             <h4>
-                            <a href="https://vandersinn.bandcamp.com/merch">Cloud 9 | Facebook</a>
+                            <a href="https://www.facebook.com/search">Cloud 9 | Facebook</a>
                             </h4>
-                            <p class="u-no-padding--bottom">Cloud Nine Dog Grooming Solon</p>
+                            <p class="u-no-padding--bottom">Cloud 9 Dog Grooming Solon</p>
                         </div>
                         </div>
                     </div>
@@ -82,9 +175,9 @@
                         <div class="p-card__content">
                             <img class="p-card__image" alt="" height="185" width="330" src="./images/d2b/d2b-bag.png">
                             <h4>
-                            <a href="https://vandersinn.bandcamp.com/merch">van der Sinn | Bandcamp</a>
+                            <a href="https://vandersinn.bandcamp.com/merch">Deals 2 Build | non e-commerce</a>
                             </h4>
-                            <p class="u-no-padding--bottom">Merchendise of music project</p>
+                            <p class="u-no-padding--bottom">DIY Store logo refresh</p>
                         </div>
                         </div>
                     </div>
@@ -107,145 +200,15 @@
                             <img class="p-card__image" alt="" height="185" width="330" src="./images/vds-type.png">
                             <model-viewer src="./ubh.glb" alt="3D model" auto-rotate style="height:330px; width: 100%;"></model-viewer>
                             <h4>
-                            <a href="https://vandersinn.bandcamp.com/merch">van der Sinn | Bandcamp</a>
+                            <a href="https://www.instagram.com/vds.ensemble">VDS ensemble | Instagram</a>
                             </h4>
-                            <p class="u-no-padding--bottom">Merchendise of music project</p>
+                            <p class="u-no-padding--bottom">Profile with brand promotional content</p>
                         </div>
                         </div>
                     </div>
                 
                 </div>
             </div>
-            
-        
-            <h1 class="gallery-title">// ____________________________________web under construction</h1>
-            <aside>world to discover</aside>
-            <button style="width: 600px; height 400px; font-size: 32px;
-             text-decoration: none; color:white; background-color: blue; margin-left: 500px; border-radius: 20px;" >
-                <a href="./index.html" style="text-decoration: none; color:white;">back to start</a> </button>
-            
-                <button class="p-button--neutral">back</button>
-
-        <section id="gallery">
-            <div class="gallery-grid">
-                
-                <div class="gallery-item">
-                    <img src="./images/cold-hell.png" width="100%" style="background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                
-                    <h3>Coffee Club</h3>
-                    <button style="display: none;">open</button>
-               </div>
-               <div class="gallery-item">
-                    <img src="./images/d2b/d2b-bag.png" width="100%" style="background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                
-                    <h3>Deals 2 Build</h3>
-                    <button style="display: none;">open</button>
-               </div>
-               <div class="gallery-item">
-                    <img src="./images/c9dg-logo.png" width="100%" style="background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                
-                    <h3>Dog Grooming</h3>
-                    <button style="display: none;">open</button>
-               </div>
-               <div class="gallery-item">
-                    <img src="./images/ts-derSinn.png" width="100%" style="background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                
-                    <h3>Merch</h3>
-                    <button style="display: none;">open</button>
-               </div>
-               <div class="gallery-item">
-                    <img src="./images/sticker.png" width="100%" style="background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                
-                    <h3>Stickers</h3>
-                    <button style="display: none;">open</button>
-               </div>
-
-                    
-
-               <div class="gallery-item">
-                <model-viewer class="model-viewer" src="./testcube.glb" alt="3D model" auto-rotate>
-                <h3>modelling</h3>
-                <button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./ubh.glb" alt="3D model" auto-rotate>
-                <h3>detailing</h3><button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./ubh.glb" alt="3D model" auto-rotate>
-                <h3>prod.opts</h3><button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                <h3>concepts</h3><button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                <h3>identity</h3><button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                <h3>interiorVis</h3><button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                <h3>charting</h3><button>open</button></model-viewer>
-               </div>
-               <div class="gallery-item">
-                <model-viewer src="./s_ja.glb" alt="3D model" auto-rotate>
-                <h3>digitizing</h3><button>open</button></model-viewer>
-               </div>
-
-                </div>
-            </div>
-        </section>
-    <div class="brand-container" style="display: flex; height: 100%;"> 
-            <div class="card" style="display: flex; height: 500px;">               
-                <div class="row">
-                    <div class="col-4">
-
-                        <div class="p-card">
-                        <div class="p-card__content">
-                            <img class="p-card__image" alt="" height="185" width="330" src="./images/sticker.png">
-                            <h4>
-                            <a href="https://vandersinn.bandcamp.com/merch">van der Sinn | Bandcamp</a>
-                            </h4>
-                            <p class="u-no-padding--bottom">Merchendise of music project</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-                           
-            <div class="card" style="display: flex; height: 500px;">               
-                    <div class="row">
-                        <div class="col-4">
-
-                            <div class="p-card">
-                            <div class="p-card__content">
-                            <img class="p-card__image" alt="" height="185" width="330" src="./images/sticker.png">
-                            <h4>
-                            <a href="https://vandersinn.bandcamp.com/merch">van der Sinn | Bandcamp</a>
-                            </h4>
-                            <p class="u-no-padding--bottom">Merchendise of music project</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>    
-    </div>
 
     <footer>
         <p>ⓡ 2026 design powered by Visual Design Studio | S_JΛ</p>

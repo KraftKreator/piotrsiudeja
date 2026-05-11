@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 100px;
     background: rgba(218, 212, 255, 0.801);
     backdrop-filter: blur(8px);
     text-align: right;
@@ -382,7 +382,7 @@ section a:hover {
     background-position: center;
     background-repeat: no-repeat;
     align-content: center;
-    margin-bottom: 205px;
+    
     
     
 }
@@ -416,6 +416,7 @@ section a:hover {
     backdrop-filter: blur(8px);
     border-radius: 8px;
 }
+
 
 /* --------------------------------------------------
    SECTION DIVIDER

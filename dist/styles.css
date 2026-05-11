@@ -9069,7 +9069,7 @@ h1.p-stepped-list__title + .p-stepped-list__content {
 }
 .p-navigation__tagged-logo .p-navigation__logo-tag {
   align-items: flex-end;
-  background-color: #e95420;
+  background-color: #ffffff;
   display: flex;
   height: 2.375rem;
   justify-content: center;
@@ -9080,8 +9080,8 @@ h1.p-stepped-list__title + .p-stepped-list__content {
   width: 1.375rem;
 }
 .p-navigation__tagged-logo .p-navigation__logo-icon {
-  height: 1rem;
-  width: 1rem;
+  height: 12rem;
+  width: 12rem;
 }
 .p-navigation__tagged-logo .p-navigation__logo-title {
   color: var(--vf-color-text-default);
