@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S_JΛ | logotypes </title>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images/favicon-sja.png" type="image/png">
+    <link rel="icon" href="./images/fav-bracket.png" type="image/png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="/dist/styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -22,23 +22,115 @@
 <body>
     
 
-    <model-viewer id="bgModel" src="./s_ja.glb" alt="3D model"
-        auto-rotate 
-        style="position: fixed; top: 0; left: 0; width: 380px; height: auto; z-index: -1; display: none;"></model-viewer>    
+   
     <div class="wrapper">   
-        <header>
-           <div class="burger"> 
-                <span></span>
-                <span></span>   
-                <span></span>
-           </div>
-
-           <nav class="menu-wrapper">
-            <md-outlined-button class="menu" href="https://www.figma.com/proto/M2K4QJUr4RHqS6JPrL7QHi/portfo-White-Black?node-id=1-1099&p=f&t=Wvn5u8vs64ZRTtdG-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A358" target="_blank">designs</md-outlined-button>
-               <md-outlined-button class="menu" href="https://www.linkedin.com/in/piotr-siudeja-0a118b1a8/" target="_blank">contact</md-outlined-button>
-               <md-outlined-button class="menu" href="gallery.html" target="_blank">gallery</md-outlined-button>
-            </nav>
+        <header><!--note bar-->
+           
         </header>
+        <header id="navigation" class="p-navigation--sliding">
+            <div class="p-navigation__row--25-75">
+                <div class="p-navigation__banner">
+                <div class="p-navigation__tagged-logo">
+                    <a class="p-navigation__link" href="index.html">
+                    <div class="p-navigation__logo-tag" style="width: 100%; height: auto;">
+                        <img class="p-navigation__logo-icon" src="./images/bracket-black.png" alt="">+
+                    </div>
+                    <span class="p-navigation__logo-title">S_JΛ </span>
+                    </a>
+                </div>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                    <button class="js-menu-button p-navigation__link">Menu</button>
+                    </li>
+                </ul>
+                </div>
+                <nav class="p-navigation__nav" aria-label="Example main">
+                <ul class="p-navigation__items js-dropdown-nav-list js-navigation-sliding-panel">
+                    <!--<li class="p-navigation__item">
+                    <a class="p-navigation__link" href="https://www.figma.com/proto/M2K4QJUr4RHqS6JPrL7QHi/portfo-White-Black?node-id=1-675&t=WRIYSPc2mM4nFqQz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A358" tabindex="0">Designs</a>
+                    </li> -->
+                   <!-- <li class="p-navigation__item">
+                    <a class="p-navigation__link" href="#" tabindex="0">Gallery</a>
+                    </li>-->
+                    <li class="p-navigation__item">
+                    <a class="p-navigation__link" href="https://www.linkedin.com/in/piotr-siudeja-0a118b1a8/" tabindex="0" target="_blank">Contact</a>
+                    </li>
+                    <li class="p-navigation__item--dropdown-toggle js-navigation-dropdown-toggle is-selected" id="link-1">
+                    <button href="#link-1-menu" aria-controls="link-1-menu" class="p-navigation__link" tabindex="0">
+                        LOGOTYPE
+                    </button>
+                    <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel is-collapsed" id="link-1-menu" aria-hidden="true" data-level="1">
+                        <li class="p-navigation__item--dropdown-close" id="link-1-back">
+                        <button href="#link-1-menu" aria-controls="link-1-menu" class="p-navigation__link js-back-button" tabindex="-1">
+                            Back
+                        </button>
+                        </li>
+                        <li>
+                        <a href="logotype-designs.html" class="p-navigation__dropdown-item" tabindex="-1" target="_blank">Works Portfolio</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">Naming Concepts</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">Color Palletes</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">Design Process</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1" style="background-color: darkgrey; color: lightgrey;">DTP / Print / Web</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="p-navigation__item--dropdown-toggle js-navigation-dropdown-toggle" id="link-2">
+                    <button href="https://www.figma.com/proto/vnwSqFirS88hen4t6GJehg/Untitled?node-id=21-813&t=NHT9bwSAaknyvikM-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" aria-controls="link-2-menu" class="p-navigation__link" tabindex="0">
+                        BRANDING
+                    </button>
+                    <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel is-collapsed" id="link-2-menu" aria-hidden="true" data-level="1">
+                        <li class="p-navigation__item--dropdown-close" id="link-2-back">
+                        <button href="#link-2-menu" aria-controls="link-2-menu" class="p-navigation__link js-back-button" tabindex="-1">
+                            Back
+                        </button>
+                        </li>
+                        <li>
+                        <a href="branding.html" class="p-navigation__dropdown-item" tabindex="-1">Works</a>
+                        </li>
+                        <!-- <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1">Apps</a>
+                        </li>
+                        <li>
+                        <a href="#" class="p-navigation__dropdown-item" tabindex="-1">Getting started</a>
+                        </li> -->
+                        <li class="p-navigation__item--dropdown-toggle js-navigation-dropdown-toggle" id="link-4">
+                        <button href="#link-4-menu" aria-controls="link-4-menu" class="p-navigation__link" tabindex="-1">
+                            App
+                        </button>
+                        <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel is-collapsed" id="link-4-menu" aria-hidden="true" data-level="2">
+                            <li class="p-navigation__item--dropdown-close" id="link-4-back">
+                            <button href="#link-4-menu" aria-controls="link-4-menu" class="p-navigation__link js-back-button" tabindex="-1">
+                                Back
+                            </button>
+                            </li>
+                            <li>
+                            <a href="https://www.figma.com/proto/Ez6Ho298MMNVyFh025ypVt/CoffeClub?node-id=441-43&t=9n6NxcfkOcp57imu-0&scaling=scale-down&content-scaling=fixed&page-id=441%3A0&fuid=1351910191476709785"
+                             class="p-navigation__dropdown-item" tabindex="-1" target="_blank">Mobile</a>
+                            </li>
+                            <li>
+                            <a href="https://www.figma.com/proto/vnwSqFirS88hen4t6GJehg/Untitled?node-id=21-813&t=NHT9bwSAaknyvikM-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&fuid=1351910191476709785" class="p-navigation__dropdown-item" tabindex="-1" target="_blank">Desktop</a>
+                            </li>
+                            
+                    </ul>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            </header>
+    <script src="script-header.js"></script>
+        <header><img class="" src="./images/bracket-white.png" alt="">
+           
+        </header>
+           
+        
 <nav class="p-breadcrumbs">
                 <ol class="p-breadcrumbs__items">
                     <li class="p-breadcrumbs__item">/<a href="/index.html">/ Strona główna /</a>/</li>
@@ -47,26 +139,47 @@
                 </nav>
 
             <div class="title">
-                <h3>// product designer</h3>  
-                   
+                <h3> works selection </h3>  
+</div>
+    <div class="p-image-container--square-on-small p-image-container--16-9-on-medium p-image-container--cinematic-on-large is-highlighted">
+  <div class="lazyloaded">
+    <img src="./images/b-jack-logo-black.png" alt="" width="852" height="1279" loading="lazy" class="p-image-container__image">
+  </div>
+</div>
+    <div class="p-image-container--square-on-small p-image-container--16-9-on-medium p-image-container--cinematic-on-large is-highlighted">
+  <div class="lazyloaded">
+    <img src="./images/b-jack-mood.png" alt="" width="852" height="1279" loading="lazy" class="p-image-container__image">
+  </div>
+</div>    
+<header class="hero">
+        <div class="hero-bg">
+           <img src="./images/b-jack-logo-white.png" height="100%">
+        </div>   
+        </div>
+    </header>                 
             </div>
 
             <!-- SEPARATOR / SECTION LABEL -->
     <div class="section-divider">
-        
-        <div class="divider-line"></div>
-        
+        <div class="divider-line"></div>        
     </div>
+</div>
+    <div class="p-image-container--square-on-small p-image-container--16-9-on-medium p-image-container--cinematic-on-large is-highlighted">
+  <div class="lazyloaded">
+    <img src="./images/pepe-r/peperuna-logo.png" alt="" width="852" height="1279" loading="lazy" class="p-image-container__image">
+  </div>
+</div>
+
     
     <div class="container">
         <div><img src="./images/pepe-r/peperuna-logo.png" width="100%">
             <div class="img-caption-container">    
-                <h2>logotype design</h2><p>light</p>  
+                <h3>logotype design</h3><p>light</p>  
             </div>
         </div>
         <div><img src="./images/pepe-r/peperuna-logo-white.png" width="100%" style="background-color: black;">
             <div class="img-caption-container">
-                <h2>logotype design</h2><p>dark</p>
+                <h3>logotype design</h3><p>dark</p>
             </div>
         </div>
 
@@ -75,7 +188,7 @@
                 <img src="./images/pepe-r/peperuna-logo-white.png" style="width: 50%; position: fixed;"> 
             </div>
             <div class="img-caption-container">
-                <h2>campaign</h2><p>catalogue cover picture</p>
+                <h3>campaign</h3><p>catalogue cover picture</p>
             </div>
         </div>
 
@@ -86,7 +199,7 @@
             </div>
 
             <div class="img-caption-container">
-                <h2>garment design</h2><p>a/w rtw</p>
+                <h3>garment design</h3><p>a/w rtw</p>
             </div>
         </div>
         
@@ -95,7 +208,7 @@
         <!-- HEADER / HERO -->
     <header class="hero">
         <div class="hero-bg">
-           <img src="./images/pepe-r/peperuna-logo.png" width="100%">
+           <img src="./images/pepe-r/peperuna-logo-white.png" width="100">
         </div>   
         </div>
     </header>
@@ -107,16 +220,21 @@
     <div class="section-divider">
         <div class="divider-line"></div>
     </div>
+    <div class="p-image-container--square-on-small p-image-container--16-9-on-medium p-image-container--cinematic-on-large is-highlighted">
+  <div class="lazyloaded">
+    <img src="./images/mmm/mmm-black.png" alt="" width="852" height="1279" loading="lazy" class="p-image-container__image">
+  </div>
+</div>
 
     <div class="container">
         <div><img src="./images/mmm/mmmblack.jpg" width="100%">
             <div class="img-caption-container">
-                <h2>logotype design</h2><p>darkmode display</p>
+                <h3>logotype design</h3><p>darkmode display</p>
             </div>
         </div>
         <div><img src="./images/mmm/mmm-signet.png" width="100%">
             <div class="img-caption-container">
-                <h2>sign / favicon</h2><p>color</p>
+                <h3>sign / favicon</h3><p>color</p>
             </div>
         </div>
 
@@ -125,7 +243,7 @@
                <!-- OPTIONAL COVER IMAGE: <img src="./images/pepe-r/peperuna-logo-white.png" style="width: 50%; position: fixed;">-->
             </div>
             <div class="img-caption-container">
-                <h2>colorpalette</h2><p>pantone colorcode</p>
+                <h3>colorpalette</h3><p>pantone colorcode</p>
             </div>
         </div>
 
@@ -134,7 +252,7 @@
                 <!--<img src="./images/pepe-r/peperuna-logo-white.png" style="width: 250%; background-color: rgba(255, 255, 255, 0.034); position: fixed;"> -->
             </div>
             <div class="img-caption-container">
-                <h2>logotype</h2><p>colourway</p>
+                <h3>logotype</h3><p>colourway</p>
             </div>
         </div>
         
@@ -159,12 +277,12 @@
     <div class="container">
         <div><img src="./images/d2b/d2b-sign-rebrand3.png" width="100%">
             <div class="img-caption-container">
-                <h2>logotype design</h2><p>darkmode display</p>
+                <h3>logotype design</h3><p>darkmode display</p>
             </div>
         </div>
         <div><img src="./images/d2b/d2b-logotype-rebrand4.png" width="100%">
             <div class="img-caption-container">
-                <h2>sign / favicon</h2><p>color</p>
+                <h3>sign / favicon</h3><p>color</p>
             </div>
         </div>
 
@@ -173,7 +291,7 @@
                <!-- OPTIONAL COVER IMAGE: <img src="./images/" style="width: 50%; position: fixed;">-->
             </div>
             <div class="img-caption-container">
-                <h2>colorpalette</h2><p>pantone colorcode</p>
+                <h3>colorpalette</h3><p>pantone colorcode</p>
             </div>  
         </div>
 
@@ -182,7 +300,7 @@
                 <!--<img src="./images/pepe-r/peperuna-logo-white.png" style="width: 250%; background-color: rgba(255, 255, 255, 0.034); position: fixed;"> -->
             </div>
             <div class="img-caption-container">
-                <h2>logotype</h2><p>colourway</p>
+                <h3>logotype</h3><p>colourway</p>
             </div>
         </div>
         
@@ -198,12 +316,9 @@
         </div>
     </header>
 
-    <!-- SEPARATOR / SECTION LABEL -->
-    <div class="section-divider">
-        <div class="divider-line"></div>
-    </div>
+ 
 
-    <!-- PROJECT SECTION 1 -->
+    <!-- PROJECT SECTION 1 --><!--
     <section class="project-block">
         
         <div class="project-image-wrapper">
@@ -232,7 +347,8 @@
                         <span class="cta-text">+ Watch</span>
                     </div>
                 </div>
-            </div>
+            </div> 
+        -->
 
             <div class="project-bottomline">
                 <div class="project-bottomline-inner"></div>
@@ -241,14 +357,18 @@
 
     </section>
 
-   
+    <nav class="menu-wrapper">
+            <md-outlined-button class="menu" href="./index.html" target="_blank">home</md-outlined-button>
+               <md-outlined-button class="menu" href="https://www.linkedin.com/in/piotr-siudeja-0a118b1a8/" target="_blank">contact</md-outlined-button>
+               <md-outlined-button class="menu" href="branding.html" target="_blank">branding</md-outlined-button>
+            </nav>
 
 
                 
                 
             <section id="credits"> 
-                <h1>credits</h1>
-                <p>Professional support in apparel development is a key to your successful sales, including technical consulting, garment design, material selection, prototype evaluation and production oversight. Services focus on precise, process‑driven solutions backed by extensive experience in clothing technology and product development. </p>
+                <h1>logotype</h1>
+                <p>created with attention to detail can elevate brand to new heights</p>
                 <p> </p>
             </section>
             

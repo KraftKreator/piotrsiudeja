@@ -5,12 +5,12 @@
 @include vf-p-breadcrumbs;
 @include vf-buttons;
 @include vf-navigation;
+@include vf-base;
+@include vf-p-pull-quotes;
 
 .p-breadcrumbs__item a{
   font-size: 44px;
 }
 
-.p-navigation__logo-tag {
-  background-color: rgb(255, 255, 255);
-}
+
 
