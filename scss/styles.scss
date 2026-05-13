@@ -1,16 +1,18 @@
 @import "vanilla-framework/scss/vanilla";
 @include vanilla;
 
-// komponent breadcrumbs
-@include vf-p-breadcrumbs;
+// komponenty
+@include vf-breadcrumbs;
 @include vf-buttons;
 @include vf-navigation;
 @include vf-base;
 @include vf-p-pull-quotes;
 
-.p-breadcrumbs__item a{
-  font-size: 44px;
+.p-breadcrumbs__link {
+  font-size: 64px;
 }
 
-
+.p-pull-quote__quote {
+  font-size: 64px;
+}
 
