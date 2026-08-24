@@ -200,6 +200,20 @@ div .title h3{
     outline-width: auto;
 }
 
+.frame {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#txtframe {
+    max-width: 100%;
+    corner-radius: 10px;
+    height: auto;
+    background: rgb(2, 1, 25);
+}
+
 
 section {
     max-width: 800px;
@@ -295,13 +309,13 @@ section a:hover {
     backdrop-filter: blur(10px);
     border-radius: 1px;
     border: 1px solid rgba(255,255,255,0.2);
-    width: 120%;
+    width: 100%;
     height: 100%;
     margin: 10px 10px;
     display: flex;
 }
 
-.tile-item :hover {
+.tile-item:hover {
     
     backdrop-filter: blur(100px);
     border-radius: 150px;
@@ -656,6 +670,49 @@ footer p {
     text-align: right;
     
     mix-blend-mode: difference;
+}
+
+/*dotyczy podstrony branding */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.row .col-4 {
+    display: flex;
+}
+
+.p-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.p-card .p-card__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+/* fixed frame so every image fits without being cropped or distorted */
+.p-card .p-card__image {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    object-position: center;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.p-card .p-card__content h4 {
+    margin-top: 0;
+}
+
+.p-card .p-card__content p {
+    margin-top: auto;
 }
 
 
